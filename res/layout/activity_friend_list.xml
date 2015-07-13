@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0f7fa"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/friend1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="34dp"
+        android:background="#ffffff"
+        android:text="cagla arikan\nezgi ebren"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="Choose friend to ask a question"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:textColor="#1e88e5" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:text="My Friends"
+        android:textColor="#006064"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

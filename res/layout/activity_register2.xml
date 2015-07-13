@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecefff"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/month_spinner"
+        android:layout_toRightOf="@+id/month_spinner"
+        android:hint="Year"
+        android:ems="10" />
+     <TextView
+        android:id="@+id/backToLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:text="Already have an account?"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+     <EditText
+         android:id="@+id/day"
+         android:layout_width="80dp"
+         android:layout_height="40dp"
+         android:layout_alignLeft="@+id/birthday"
+         android:layout_alignTop="@+id/month_spinner"
+         android:ems="10"
+         android:hint="Day" >
+
+         <requestFocus />
+     </EditText>
+
+     <Spinner
+         android:id="@+id/gender_spinner"
+         android:layout_width="100dp"
+         android:layout_height="40dp"
+         android:layout_above="@+id/birthday"
+         android:layout_alignLeft="@+id/textView1"
+         android:layout_marginBottom="25dp"
+         android:drawSelectorOnTop="true"
+         android:entries="@array/gender_array"
+         android:prompt="@string/gender_prompt" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/gender_spinner"
+         android:layout_alignLeft="@+id/birthday"
+         android:text="Gender"
+         android:textSize="18dp"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/birthday"
+         android:layout_width="80dp"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/day"
+         android:layout_alignLeft="@+id/register"
+         android:layout_marginBottom="16dp"
+         android:text="Birthday"
+         android:textSize="18dp"
+         android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/register"
+         android:layout_width="230dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/year"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="54dp"
+         android:background="#006064"
+         android:text="Register"
+         android:textColor="#ffffff" />
+
+     <Spinner
+         android:id="@+id/month_spinner"
+         android:layout_width="100dp"
+         android:layout_height="40dp"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@+id/day"
+         android:drawSelectorOnTop="true"
+         android:entries="@array/month_array"
+         android:prompt="@string/month_prompt" />
+
+</RelativeLayout>

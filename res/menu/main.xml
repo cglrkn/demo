@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.demo.ProfileActivity" >
+
+ <item 
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom|withText"
+        android:title="Home"/>
+    <item 
+        android:id="@+id/friends"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_group"
+        app:showAsAction="ifRoom|withText"
+        android:title="Friends"/>
+    
+     <item 
+         android:id="@+id/profilepg"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_person"
+        app:showAsAction="ifRoom|withText"
+        android:title="Profile"/>
+
+    <item 
+        android:id="@+id/find_friends"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+         android:icon="@drawable/ic_action_add_group"
+        android:title="Find Friends"/>
+
+       <item 
+         android:id="@+id/logoutlink"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Logout"/>
+
+</menu>
